@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Js.Presentation", "Sitecore.Js.Presentation\Sitecore.Js.Presentation.csproj", "{44A5AB5B-7329-4146-B3D8-3F78CD5D9EF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{70A5FFA5-20C9-4F11-94D2-DD9DC6158F0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D85477BD-187E-44FB-BD09-88745DEE96D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{5A9D46D4-436E-4774-9145-46877232F18E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Js.Presentation.Sample.Console", "Sitecore.Js.Presentation.Sample.Console\Sitecore.Js.Presentation.Sample.Console.csproj", "{C11BF1E5-BEE3-4551-BB37-AD93238FA983}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44A5AB5B-7329-4146-B3D8-3F78CD5D9EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A5AB5B-7329-4146-B3D8-3F78CD5D9EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A5AB5B-7329-4146-B3D8-3F78CD5D9EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A5AB5B-7329-4146-B3D8-3F78CD5D9EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11BF1E5-BEE3-4551-BB37-AD93238FA983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11BF1E5-BEE3-4551-BB37-AD93238FA983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11BF1E5-BEE3-4551-BB37-AD93238FA983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11BF1E5-BEE3-4551-BB37-AD93238FA983}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44A5AB5B-7329-4146-B3D8-3F78CD5D9EF2} = {70A5FFA5-20C9-4F11-94D2-DD9DC6158F0A}
+		{C11BF1E5-BEE3-4551-BB37-AD93238FA983} = {5A9D46D4-436E-4774-9145-46877232F18E}
+	EndGlobalSection
+EndGlobal

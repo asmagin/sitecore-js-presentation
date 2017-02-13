@@ -1,0 +1,9 @@
+﻿<configuration>
+	<system.web.webPages.razor>
+		<pages>
+			<namespaces>
+				<add namespace="Sitecore.Js.Presentation" />
+			</namespaces>
+		</pages>
+	</system.web.webPages.razor>
+</configuration>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Sitecore.Js.Presentation</id>
+        <version>$version$</version>
+        <title>Sitecore JavaScript Presentation Module</title>
+        <authors>Alex Smagin</authors>
+        <owners>Alex Smagin</owners>
+        <licenseUrl>https://raw.githubusercontent.com/asmagin/sitecore-js-presentation/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/asmagin/sitecore-js-presentation</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A module for creating Sitecore components using embedded JavaScript engine</description>
+        <releaseNotes>https://github.com/asmagin/sitecore-js-presentation</releaseNotes>
+        <copyright>Alex Smagin (c) 2016</copyright>
+        <language />
+        <tags>Sitecore, JavaScript, React, ReactJS</tags>
+    </metadata>
+    <files>
+        <file src=".\content\App_Config\Include\Sitecore.Js.Presentation\Sitecore.Js.Presentation.config" target="content\App_Config\Include\Sitecore.Js.Presentation\Sitecore.Js.Presentation.config" />
+        <file src=".\content\Views\web.config.transform" target="content\Views\web.config.transform" />
+        <file src=".\bin\$configuration$\Sitecore.Js.Presentation.dll" target="lib\net452\Sitecore.Js.Presentation.dll" />
+    </files>
+</package>
