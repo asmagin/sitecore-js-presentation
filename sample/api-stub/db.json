@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": "580e2d7b74bce595476c68a2",
+      "price": 689.98,
+      "currency": "USD",
+      "amount": 12,
+      "name": "Soprano",
+      "brand": "Exotechno",
+      "status": "In Stock",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b87ff15dd0afe17dc",
+      "price": 134.82,
+      "currency": "USD",
+      "amount": 9,
+      "name": "Coriander",
+      "brand": "Zilphur",
+      "status": "Sold Out",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b26e3f92972379b26",
+      "price": 647.78,
+      "currency": "BYN",
+      "amount": 8,
+      "name": "Centrexin",
+      "brand": "Accruex",
+      "status": "Sold Out",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b8875c663bfe058f6",
+      "price": 713.96,
+      "currency": "BYN",
+      "amount": 13,
+      "name": "Infotrips",
+      "brand": "Earthmark",
+      "status": "Leaves warehouse in a week",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b3dfa8ce3e067896e",
+      "price": 522.4,
+      "currency": "EUR",
+      "amount": 12,
+      "name": "Bolax",
+      "brand": "Pulze",
+      "status": "In Stock",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b236774f9603f41b0",
+      "price": 36.37,
+      "currency": "BYN",
+      "amount": 6,
+      "name": "Zytrax",
+      "brand": "Overplex",
+      "status": "In Stock",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b14b7ed6181d71510",
+      "price": 651.82,
+      "currency": "EUR",
+      "amount": 10,
+      "name": "Dadabase",
+      "brand": "Billmed",
+      "status": "Last call",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b3be70e9adf3f8c2f",
+      "price": 705.13,
+      "currency": "RUB",
+      "amount": 6,
+      "name": "Imant",
+      "brand": "Eplode",
+      "status": "Leaves warehouse in a week",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b842138cabab029b5",
+      "price": 644.89,
+      "currency": "USD",
+      "amount": 6,
+      "name": "Aquafire",
+      "brand": "Rodeocean",
+      "status": "Leaves warehouse in a week",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    },
+    {
+      "id": "580e2d7b53e69bdee2afaada",
+      "price": 985.61,
+      "currency": "EUR",
+      "amount": 10,
+      "name": "Keeg",
+      "brand": "Quotezart",
+      "status": "In Stock",
+      "image": "<img className=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" width=\"72\" height=\"72\" />"
+    }
+  ]
+}
