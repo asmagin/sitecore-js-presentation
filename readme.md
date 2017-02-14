@@ -1,1 +1,2 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/w8k84te2f33xmmf9?svg=true)](https://ci.appveyor.com/project/asmagin/sitecore-js-presentation)
+[![NuGet version](http://img.shields.io/nuget/v/Sitecore.Js.Presentation.svg)](https://www.nuget.org/packages/Sitecore.Js.Presentation/)
