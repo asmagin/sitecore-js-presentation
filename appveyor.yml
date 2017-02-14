@@ -9,9 +9,27 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+environment:
+  nodejs_version: 6
+install:
+- ps: Install-Product node $env:nodejs_version
 before_build:
 - cmd: nuget restore .\src\Sitecore.Js.Presentation.sln
+after_build:
+- node --version
+- npm --version
+- cd .\sample 
+- npm i
+- npm run server:dev
+- 7z a Sitecore.Js.Presentation.Sample.zip %APPVEYOR_BUILD_FOLDER%\sample\dist\
+artifacts:
+- path: '**\Sitecore.Js.Presentation.Sample.zip'
+  name: 'Sitecore.Js.Presentation.Sample.$(appveyor_build_version).zip'
+  type: zip
+- path: '**\Sitecore.Js.Presentation.*.nupkg'
+  name: NuGet Package
 build:
+  project: .\src\Sitecore.Js.Presentation.sln
   publish_nuget: true
   verbosity: minimal
 deploy:
@@ -19,3 +37,11 @@ deploy:
   name: NuGet.org
   on:
     branch: master
+- provider: Environment
+  name: GitHub Releases Sitecore.Js.Presentation
+  on:
+    branch: master
+cache:
+  - src\packages -> **\packages.config        # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
+  - sample\node_modules -> **\packages.json   # local npm modules
+  - '%APPDATA%\npm-cache'                     # npm cache
