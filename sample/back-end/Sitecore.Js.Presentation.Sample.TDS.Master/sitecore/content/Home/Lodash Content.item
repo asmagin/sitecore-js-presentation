@@ -1,0 +1,108 @@
+----item----
+version: 1
+id: {2D98F762-6297-474A-8C57-3B4DE984F0A0}
+database: master
+path: /sitecore/content/Home/Lodash Content
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: Lodash Content
+master: {00000000-0000-0000-0000-000000000000}
+template: {951E938B-FE24-42EC-BCFC-2630B2AE124F}
+templatekey: Js Sample Item
+created: 20170215T060234:636227353541130000
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 739
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{99DED077-FF71-47BC-9FC2-B24F25D6F34D}"><r id="{3634E8E4-3198-46A2-89FE-76D78836B505}" ph="content" uid="{CFC06115-7833-46FD-BB79-350785D9CA23}" /><r ds="{DD4ADDAC-31C3-4D3F-9873-43D3E16FA3F8}" id="{2B2FD742-45D8-4E2C-A639-55A75793AACA}" par="" ph="leftColumn" uid="{3F0CF225-D56B-4F02-A574-17171090AEB0}" /><r ds="{FA32BC34-CBA3-4741-B63B-BAFC045BE217}" id="{3A1E62D4-97D7-4221-8AC3-AB78720EA965}" par="" ph="rightColumn" uid="{B94AB271-DEDF-46C2-9EFE-C6BB0B2BFA0C}" /><r ds="{D2F42254-1A04-4452-894B-93A8A8CA940E}" id="{DE328081-87E2-4367-9EF5-F01C83305C45}" par="" ph="rightColumn" uid="{0766CE21-8DD6-48AD-BE18-49DEA4C22966}" /></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 0
+
+
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 0ca6664d-c0a2-46e1-afa5-fd43b7044b20
+
+----field----
+field: {81E49E48-2C71-456C-A53D-FC4CB18D85D8}
+name: Title
+key: title
+content-length: 14
+
+Lodash Content
+----field----
+field: {176ECF1B-2054-44EE-A12D-8127256D690F}
+name: Text
+key: text
+content-length: 84
+
+A modern JavaScript utility library delivering modularity, performance &amp; extras.
+----field----
+field: {F53B94F9-80F3-46F7-99A5-5E93BB8403E1}
+name: Image
+key: image
+content-length: 110
+
+<image mediaid="{4425BE35-6EAE-4765-B673-0B9CB402E46D}" alt="" height="200" width="200" hspace="" vspace="" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170215T060234Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0ca6664d-c0a2-46e1-afa5-fd43b7044b20
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170215T133737Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 0
+
+
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

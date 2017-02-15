@@ -18,16 +18,18 @@ before_build:
 after_build:
 - node --version
 - npm --version
-- cd .\sample 
+- cd .\sample\front-end 
 - npm i
 - npm run server:dev
-- 7z a Sitecore.Js.Presentation.Sample.zip %APPVEYOR_BUILD_FOLDER%\sample\dist\
+- 7z a Sitecore.Js.Presentation.Sample.zip %APPVEYOR_BUILD_FOLDER%\sample\front-end\dist\
+- cd %APPVEYOR_BUILD_FOLDER%
 artifacts:
 - path: '**\Sitecore.Js.Presentation.Sample.zip'
-  name: 'Sitecore.Js.Presentation.Sample.$(appveyor_build_version).zip'
+  name: 'UI Sample Package'
   type: zip
-- path: '**\Sitecore.Js.Presentation.*.nupkg'
-  name: NuGet Package
+- path: 'sample\sc-packages\Sitecore.Js.Presentation.Sample.Master.update'
+  name: 'Sitecore Update Package'
+  type: zip
 build:
   project: .\src\Sitecore.Js.Presentation.sln
   publish_nuget: true
@@ -42,6 +44,6 @@ deploy:
   on:
     branch: master
 cache:
-  - src\packages -> **\packages.config        # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
-  - sample\node_modules -> **\packages.json   # local npm modules
+  - src\packages -> src\**\packages.config        # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
+  - sample\front-end\node_modules -> sample\front-end\packages.json   # local npm modules
   - '%APPDATA%\npm-cache'                     # npm cache

@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Js.Presentation.Sample", "Sitecore.Js.Presentation.Sample\Sitecore.Js.Presentation.Sample.csproj", "{D9D50A5C-26FE-4CB2-94FE-E15DD3A8A4C7}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Js.Presentation.Sample.TDS.Master", "Sitecore.Js.Presentation.Sample.TDS.Master\Sitecore.Js.Presentation.Sample.TDS.Master.scproj", "{EE59E117-2C3B-4A9B-941F-A46AC7BAC4EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{1C942B4F-FE34-48B9-BA5A-474262586FD2}"
+	ProjectSection(SolutionItems) = preProject
+		TdsGlobal.config = TdsGlobal.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9D50A5C-26FE-4CB2-94FE-E15DD3A8A4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D50A5C-26FE-4CB2-94FE-E15DD3A8A4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D50A5C-26FE-4CB2-94FE-E15DD3A8A4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D50A5C-26FE-4CB2-94FE-E15DD3A8A4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE59E117-2C3B-4A9B-941F-A46AC7BAC4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE59E117-2C3B-4A9B-941F-A46AC7BAC4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE59E117-2C3B-4A9B-941F-A46AC7BAC4EC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EE59E117-2C3B-4A9B-941F-A46AC7BAC4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE59E117-2C3B-4A9B-941F-A46AC7BAC4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

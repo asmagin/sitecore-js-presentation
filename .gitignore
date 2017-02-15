@@ -274,3 +274,6 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+
+# Sitecore - prevent license leak
+license.xml

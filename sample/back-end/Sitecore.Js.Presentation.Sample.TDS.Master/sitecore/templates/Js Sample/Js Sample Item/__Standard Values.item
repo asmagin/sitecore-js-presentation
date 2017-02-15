@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {4444EABA-D135-437D-B56F-31459B7B309E}
+database: master
+path: /sitecore/templates/Js Sample/Js Sample Item/__Standard Values
+parent: {951E938B-FE24-42EC-BCFC-2630B2AE124F}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {951E938B-FE24-42EC-BCFC-2630B2AE124F}
+templatekey: Js Sample Item
+created: 20170215T132410:636227618500270000
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{76036F5E-CBCE-46D1-AF0A-4143F9B557AA}|{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 6ff9a247-6bc7-4e66-8672-5745448e9660
+
+----field----
+field: {81E49E48-2C71-456C-A53D-FC4CB18D85D8}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20061024T144300Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6ff9a247-6bc7-4e66-8672-5745448e9660
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170215T132643Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

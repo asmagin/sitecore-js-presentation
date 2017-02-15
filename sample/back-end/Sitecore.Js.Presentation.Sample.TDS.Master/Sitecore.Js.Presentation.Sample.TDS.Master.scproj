@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ee59e117-2c3b-4a9b-941f-a46ac7bac4ec</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\Sitecore.Js.Presentation.Sample</SourceWebPhysicalPath>
+    <SourceWebProject>{d9d50a5c-26fe-4cb2-94fe-e15dd3a8a4c7}|Sitecore.Js.Presentation.Sample\Sitecore.Js.Presentation.Sample.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Sitecore.Js.Presentation.Sample.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Sitecore.Js.Presentation.Sample.Master</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Sitecore.Js.Presentation.Sample.Master</AssemblyName>
+    <Name>Sitecore.Js.Presentation.Sample.Master</Name>
+    <RootNamespace>Sitecore.Js.Presentation.Sample.Master</RootNamespace>
+    <EnableCodeGeneration>False</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder,__Base template</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Js.Presentation.Sample.Domain</CodeGenTargetProject>
+    <CodeGenFile>
+    </CodeGenFile>
+    <BaseNamespace>
+    </BaseNamespace>
+    <HeaderTransformFile>header.tt</HeaderTransformFile>
+    <BaseTransformFile>item.tt</BaseTransformFile>
+    <!--Set paths saparated by pipe-->
+    <CodeGenerationLocations />
+    <!--Set DLL filter separated by pipe. e.g.: Epam.*.dll|Sample.*.dll-->
+    <CodeGenerationFilters />
+    <!--Set direct path to DLL separated by pipe-->
+    <CodeGenerationAssemblies />
+    <!--Set direct path to Glass.Mapper & Glass.Mapper.Sc DLL separated by pipe-->
+    <CodeGenerationDependencies>D:\.projects\Sitecore.Js\src\server\packages\Glass.Mapper.Sc.4.1.2.67\lib\net45\Glass.Mapper.dll|D:\.projects\Sitecore.Js\src\server\packages\Glass.Mapper.Sc.4.1.2.67\lib\81\Glass.Mapper.Sc.dll,D:\.projects\Sitecore.Js\src\server\packages\Glass.Mapper.Sc.Core.4.2.0.179-beta\lib\net45\Glass.Mapper.dll|D:\.projects\Sitecore.Js\src\server\packages\Glass.Mapper.Sc.Core.4.2.0.179-beta\lib\82\Glass.Mapper.Sc.dll</CodeGenerationDependencies>
+    <!--Set namespases that should be used by generated code-->
+    <CodeGenerationUsings>Epam.Sc.EngX.CodeGeneration.Domain</CodeGenerationUsings>
+    <!--Tokens that shoudl be excluded from namespace during generation-->
+    <CodeGenerationExcludeNamespaces>sitecore.templates.Sitecore.Js.Presentation.Sample|sitecore.templates.Sitecore.Js</CodeGenerationExcludeNamespaces>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
+    <SitecoreWebUrl>http://Sitecore.Js.local</SitecoreWebUrl>
+    <SitecoreDeployFolder>..\..\..\sandbox\Website\</SitecoreDeployFolder>
+    <SitecoreAccessGuid>789a8a98-cb4d-4be2-a3e1-1680f31447d6</SitecoreAccessGuid>
+    <PackageName>Sitecore.Js.Presentation.Sample.Master</PackageName>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <PackageAuthor>Alex Smagin</PackageAuthor>
+    <PackagePublisher>Alex Smagin</PackagePublisher>
+    <PackageReadme>Sitecore.Js.Presentation.Sample.Master</PackageReadme>
+    <PackageVersion>1.0</PackageVersion>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <NuGetGenerateNuGetPackage>False</NuGetGenerateNuGetPackage>
+    <NuGetRequireLicenseAcceptance>False</NuGetRequireLicenseAcceptance>
+    <NuGetSummary>
+    </NuGetSummary>
+    <NuGetExePath>..\packages\NuGet.CommandLine.3.4.3\tools</NuGetExePath>
+    <NuGetDescription>Sitecore.Js.Presentation.Sample.Master</NuGetDescription>
+    <NuGetTitle>Sitecore.Js.Presentation.Sample.Master</NuGetTitle>
+    <NuGetVersion>1.0</NuGetVersion>
+    <NuGetPackageId>Sitecore.Js.Presentation.Sample.Master</NuGetPackageId>
+    <NuGetAuthors>EPAM Systems</NuGetAuthors>
+    <NuGetOwners>EPAM Systems</NuGetOwners>
+    <NuGetCopyright>Copyright 2016 EPAM Systems. All Rights Reserved.</NuGetCopyright>
+    <NuGetLicenseUrl>
+    </NuGetLicenseUrl>
+    <NuGetIconUrl>
+    </NuGetIconUrl>
+    <NuGetProjectUrl>
+    </NuGetProjectUrl>
+    <NuGetTags>
+    </NuGetTags>
+    <NuGetReleaseNotes>
+    </NuGetReleaseNotes>
+    <NuGetLanguage>
+    </NuGetLanguage>
+    <NuGetDependencies />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
+    <SitecoreDeployFolder>..\..\..\sandbox\Website\</SitecoreDeployFolder>
+    <SitecoreAccessGuid>789a8a98-cb4d-4be2-a3e1-1680f31447d6</SitecoreAccessGuid>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Sitecore.Js.Presentation.Sample.Master_Release.xml</ValidationSettingsFilePath>
+    <PackageName>Sitecore.Js.Presentation.Sample.Master</PackageName>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>True</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <PackageAuthor>EPAM Systems</PackageAuthor>
+    <PackagePublisher>EPAM Systems</PackagePublisher>
+    <PackageReadme>Sitecore.Js.Presentation.Sample.Master</PackageReadme>
+    <PackageVersion>1.0</PackageVersion>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <NuGetGenerateNuGetPackage>False</NuGetGenerateNuGetPackage>
+    <NuGetSummary>
+    </NuGetSummary>
+    <NuGetDescription>Sitecore.Js.Presentation.Sample.Master</NuGetDescription>
+    <NuGetTitle>Sitecore.Js.Presentation.Sample.Master</NuGetTitle>
+    <NuGetVersion>1.0</NuGetVersion>
+    <NuGetPackageId>Sitecore.Js.Presentation.Sample.Master</NuGetPackageId>
+    <NuGetLicenseUrl>
+    </NuGetLicenseUrl>
+    <NuGetIconUrl>
+    </NuGetIconUrl>
+    <NuGetProjectUrl>
+    </NuGetProjectUrl>
+    <NuGetTags>
+    </NuGetTags>
+    <NuGetReleaseNotes>
+    </NuGetReleaseNotes>
+    <NuGetLanguage>
+    </NuGetLanguage>
+    <SitecoreAccessGuid>789a8a98-cb4d-4be2-a3e1-1680f31447d6</SitecoreAccessGuid>
+    <NuGetExePath>..\packages\NuGet.CommandLine.3.4.3\tools</NuGetExePath>
+    <NuGetAuthors>EPAM Systems</NuGetAuthors>
+    <NuGetOwners>EPAM Systems</NuGetOwners>
+    <NuGetCopyright>Copyright 2016 EPAM Systems. All Rights Reserved.</NuGetCopyright>
+    <NuGetRequireLicenseAcceptance>False</NuGetRequireLicenseAcceptance>
+    <NuGetDependencies />
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Js.Presentation.Sample\Sitecore.Js.Presentation.Sample.csproj">
+      <Project>{d9d50a5c-26fe-4cb2-94fe-e15dd3a8a4c7}</Project>
+      <Name>Sitecore.Js.Presentation.Sample</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\content.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Lodash Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\MVC RichText.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\React Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Redux Counter.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Redux Timer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\Js Sample Layout.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\content.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\leftColumn.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\rightColumn.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Js Sample.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Js Sample\Sample Lodash Component.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Js Sample\Sample React Component.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Js Sample\Sample Redux Counter.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Js Sample\Sample Redux Timer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Js Sample\Sample Rich Text.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Js Sample.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Js Sample\lodash.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Js Sample\react.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample\Js Sample Item.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample\Js Sample Item\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample\Js Sample Item\Data.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample\Js Sample Item\Data\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample\Js Sample Item\Data\Text.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Js Sample\Js Sample Item\Data\Title.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+  <!-- custom build targets -->
+  <!-- Sync-up of T4 templates -->
+  <Target Name="BeforeBuild">
+    <Message Importance="high" Text="Sync of T4 templates" />
+    <ItemGroup>
+      <T4Templates Include="$(SolutionDir)\.t4 templates\*.tt" />
+    </ItemGroup>
+    <Copy SourceFiles="@(T4Templates)" DestinationFiles="@(T4Templates->'$(MSBuildProjectDirectory)\Code Generation Templates\%(RecursiveDir)%(FileName)%(Extension)')" SkipUnchangedFiles="true" />
+    <Message Importance="high" Text="Sync of T4 templates complete" />
+  </Target>
+</Project>

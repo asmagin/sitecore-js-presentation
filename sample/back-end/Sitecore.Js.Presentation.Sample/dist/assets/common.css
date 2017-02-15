@@ -1,0 +1,66 @@
+.route-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header {
+  border: 0;
+  border-radius: 0;
+  background-color: #39C2D7;
+}
+
+.header > .container .navbar-brand,
+.header > .container-fluid .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.header .navbar-nav > .active > a {
+  background-color: #1A9CB0;
+}
+
+.header .navbar-nav > li > a {
+  color: #fff;
+}
+
+.header .navbar-nav > li > a:hover {
+  color: #464547;
+}
+.simple-content {
+  border: 1px dashed #1A9CB0;
+  background-color: rgba(57, 194, 215, 0.15);
+}
+
+.simple-content .placeholder {
+  margin: 5px;
+  padding: 5px;
+  border: 3px dotted red;
+  background-color: rgba(57, 194, 215, 0.15);
+}
+.counter {
+  border: 1px dashed #7F993A;
+  background-color: rgba(163, 198, 68, 0.15);
+}
+
+.placeholder .container.counter {
+  width: 100%;
+}
+.timer {
+  border: 1px dashed #7F993A;
+  background-color: rgba(178, 39, 70, 0.15);
+}
+
+.placeholder .container.timer {
+  width: 100%;
+}
+.lodash-content {
+  border: 1px dashed #1A9CB0;
+  background-color: rgba(57, 194, 215, 0.15);
+}
+
+.lodash-content .placeholder {
+  margin: 5px;
+  padding: 5px;
+  border: 3px dotted red;
+  background-color: rgba(57, 194, 215, 0.15);
+}
