@@ -113,5 +113,21 @@ You could find sample solution in [this repo](./sample). It contains 2 projects:
 #### Sample Package
 A Sample sitecore update package is aslo included. You could install it into a clean sitecore installation to see how this is working. The package includes few pages with different layouts and dynamic component based on React+Redux.
 
+Package could be downloaded [here](https://github.com/asmagin/sitecore-js-presentation/raw/master/sample/sc-packages/Sitecore.Js.Presentation.Sample.Master.update)
+
+To install the package use Sitecore Update Installation Wizard
+
+Once the installation is done, you would need to update *web.config* and add assembly binding for JavaScriptEngineSwitcher:
+``` xml
+<runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+        <dependentAssembly>
+            <assemblyIdentity name="JavaScriptEngineSwitcher.Core" publicKeyToken="c608b2a8cc9e4472" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.2.0.0" newVersion="2.2.0.0" />
+        </dependentAssembly>
+    </assemblyBinding>
+</runtime>
+```
+
 ## Feedback
 Feel free to contact me here or on Twitter [@true_shoorik](https://twitter.com/true_shoorik) to discuss the module. Please, also [post issues](https://github.com/asmagin/sitecore-js-presentation/issues) if you find them. 
