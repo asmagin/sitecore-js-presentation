@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props" Condition="Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props')" />
-  <Import Project="..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props" Condition="Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props')" />
+  <Import Project="..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props" Condition="Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props')" />
+  <Import Project="..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props" Condition="Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -42,17 +42,14 @@
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="JavaScriptEngineSwitcher.ChakraCore">
-      <HintPath>..\packages\JavaScriptEngineSwitcher.ChakraCore.2.3.2\lib\net45\JavaScriptEngineSwitcher.ChakraCore.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="JavaScriptEngineSwitcher.ChakraCore, Version=2.4.10.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.ChakraCore.2.4.10\lib\net45\JavaScriptEngineSwitcher.ChakraCore.dll</HintPath>
     </Reference>
-    <Reference Include="JavaScriptEngineSwitcher.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
-      <HintPath>..\packages\JavaScriptEngineSwitcher.Core.2.2.0\lib\net45\JavaScriptEngineSwitcher.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="JavaScriptEngineSwitcher.Core, Version=2.4.10.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.Core.2.4.10\lib\net45\JavaScriptEngineSwitcher.Core.dll</HintPath>
     </Reference>
-    <Reference Include="JSPool, Version=2.0.0.0, Culture=neutral, PublicKeyToken=2fc7775f73072640, processorArchitecture=MSIL">
-      <HintPath>..\packages\JSPool.2.0.0\lib\net451\JSPool.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="JSPool, Version=3.0.1.0, Culture=neutral, PublicKeyToken=2fc7775f73072640, processorArchitecture=MSIL">
+      <HintPath>..\packages\JSPool.3.0.1\lib\net451\JSPool.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
@@ -183,8 +180,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props'))" />
-    <Error Condition="!Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.3.1\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props'))" />
+    <Error Condition="!Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props'))" />
+    <Error Condition="!Exists('..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.2.4.6\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

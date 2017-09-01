@@ -79,6 +79,8 @@ namespace Sitecore.Js.Presentation
             this.ContainerId = string.IsNullOrEmpty(containerId) ? GenerateId() : containerId;
             this.ContainerTag = string.IsNullOrEmpty(containerTag) ? "div" : containerTag;
             this.ContainerClass = containerClass;
+
+            this._jsonSerializerSettings = new JsonSerializerSettings();
         }
 
         /// <summary>
@@ -235,11 +237,7 @@ namespace Sitecore.Js.Presentation
             catch (JsRuntimeException ex)
             {
                 throw new Exception(
-                    string.Format(
-                        "Error while rendering '{0}' to '{1}': {2}",
-                        this.ComponentName,
-                        this.ContainerId,
-                        ex.Message));
+                    $"Error while rendering '{ComponentName}' to '{ContainerId}': {ex.Message}");
             }
         }
 

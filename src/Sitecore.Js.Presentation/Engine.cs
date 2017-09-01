@@ -26,14 +26,12 @@ namespace Sitecore.Js.Presentation
 
         private readonly Func<IJsEngine, bool> _areScriptsLoaded;
 
-        private readonly Action<IJsEngine> _releaseEngineAction;
+        private bool _disposed = false;
 
         public Engine(
             Func<IJsEngine> getEngineAction,
-            Action<IJsEngine> releaseEngineAction,
             Func<IJsEngine, bool> areScriptsLoaded)
         {
-            this._releaseEngineAction = releaseEngineAction;
             this._areScriptsLoaded = areScriptsLoaded;
 
             this.EngineFromPool = new Lazy<IJsEngine>(getEngineAction);
@@ -54,9 +52,30 @@ namespace Sitecore.Js.Presentation
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
-        public virtual void Dispose()
+        /// 
+        public void Dispose()
         {
-            if (this.EngineFromPool != null && this.EngineFromPool.IsValueCreated && this.EngineFromPool.Value != null) this._releaseEngineAction(this.EngineFromPool.Value);
+            // Dispose of unmanaged resources.
+            Dispose(true);
+            // Suppress finalization.
+            GC.SuppressFinalize(this);
+        }
+
+        // Protected implementation of Dispose pattern.
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_disposed)
+                return;
+
+            if (disposing)
+            {
+                // Free any other managed objects here.
+                EngineFromPool?.Value?.Dispose();
+                this.EngineFromPool = null;
+            }
+
+            // Free any unmanaged objects here.
+            _disposed = true;
         }
 
         /// <summary>
@@ -142,14 +161,14 @@ namespace Sitecore.Js.Presentation
                     string.Format("{0}\r\nLine: {1}\r\nColumn:{2}", ex.Message, ex.LineNumber, ex.ColumnNumber),
                     ex.EngineName,
                     ex.EngineVersion)
-                    {
-                        ErrorCode = ex.ErrorCode,
-                        Category = ex.Category,
-                        LineNumber = ex.LineNumber,
-                        ColumnNumber = ex.ColumnNumber,
-                        SourceFragment = ex.SourceFragment,
-                        Source = ex.Source
-                    };
+                {
+                    ErrorCode = ex.ErrorCode,
+                    Category = ex.Category,
+                    LineNumber = ex.LineNumber,
+                    ColumnNumber = ex.ColumnNumber,
+                    SourceFragment = ex.SourceFragment,
+                    Source = ex.Source
+                };
         }
     }
 }

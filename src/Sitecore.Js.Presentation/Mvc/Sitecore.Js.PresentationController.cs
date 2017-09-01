@@ -38,10 +38,10 @@
             RenderingOptions renderOptions,
             Rendering rendering)
         {
-            var server = Locator.Current.Manager;
+            var currentManager = Locator.Current.Manager;
             var page = Locator.Current.Page;
 
-            var component = new Component(server, page, componentName, model, rendering);
+            var component = new Component(currentManager, page, componentName, model, rendering);
 
             // Render ReactJS component
             return this.Content(component.Render(renderOptions));

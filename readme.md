@@ -123,7 +123,7 @@ Once the installation is done, you would need to update *web.config* and add ass
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
         <dependentAssembly>
             <assemblyIdentity name="JavaScriptEngineSwitcher.Core" publicKeyToken="c608b2a8cc9e4472" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-2.2.0.0" newVersion="2.2.0.0" />
+        <bindingRedirect oldVersion="0.0.0.0-2.4.10.0" newVersion="2.4.10.0" />
         </dependentAssembly>
     </assemblyBinding>
 </runtime>
