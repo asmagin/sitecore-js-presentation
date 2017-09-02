@@ -21,7 +21,7 @@ The module doesn't require custom renderings to be created in Sitecore. More abo
 Install-Package Sitecore.Js.Presentation
 ```
 
-- Create JavaScript bundle that will export components in following format **\<my_bundle\>.\<my_component\>** to global scope. Each component should implement followind functions that will be used from C# code to render data.
+- Create JavaScript bundle that will export components in following format **\<my_bundle\>.\<my_component\>** to global scope. Each component should implement following functions that will be used from C# code to render data.
 ``` javascript
 var my_bundle = {
     my_component: {
@@ -34,8 +34,8 @@ var my_bundle = {
         renderToStaticMarkup: function(props) {
             // generate html and return as string
             
-            // in this case e.g. React will not generate reactid into a DOM 
-            // and won't be able to bing this code on a client side
+            // in this case e.g. React will not generate reactId into a DOM 
+            // and won't be able to bind this code on a client side
 
             // could be used in only server-side rendering is needed
         },
@@ -111,7 +111,7 @@ You could find sample solution in [this repo](./sample). It contains 2 projects:
 - Back-end - sample Visual Studio solution, that represents very basic case of using this module.
 
 #### Sample Package
-A Sample sitecore update package is aslo included. You could install it into a clean sitecore installation to see how this is working. The package includes few pages with different layouts and dynamic component based on React+Redux.
+A Sample sitecore update package is also included. You could install it into a clean sitecore installation to see how this is working. The package includes few pages with different layouts and dynamic component based on React+Redux.
 
 Package could be downloaded [here](https://github.com/asmagin/sitecore-js-presentation/raw/master/sample/sc-packages/Sitecore.Js.Presentation.Sample.Master.update)
 

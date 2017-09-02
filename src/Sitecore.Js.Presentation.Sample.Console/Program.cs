@@ -38,33 +38,18 @@
                     var manager =
                         new JsEngineManager(
                             new JsEngineManagerConfiguration
-                                {
-                                    Modules =
+                            {
+                                Modules =
                                         {
                                             @"d:\.projects\Asmagin\src\client\dist\assets\shared.js",
                                             @"d:\.projects\Asmagin\src\client\dist\assets\vendor.js",
                                             @"d:\.projects\Asmagin\src\client\dist\assets\common.js"
                                         }
-                                }))
+                            }))
                 {
-                    var engine = manager.GetEngine();
-                    var command = @"common__ext.header.renderToString({ })";
-                    try
+                    using (var engine = manager.GetEngine())
                     {
-                        var result = engine.Execute<string>(command);
-                        System.Console.WriteLine(result);
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Console.WriteLine(ex.Message);
-                    }
-
-                    System.Console.WriteLine(engine.Execute<string>("console.getCalls()"));
-
-                    while (true)
-                    {
-                        System.Console.WriteLine("> ");
-                        command = System.Console.ReadLine();
+                        var command = @"ContentComponents__ext.components.Welcome.renderToString({ })";
                         try
                         {
                             var result = engine.Execute<string>(command);
@@ -74,8 +59,43 @@
                         {
                             System.Console.WriteLine(ex.Message);
                         }
-
                         System.Console.WriteLine(engine.Execute<string>("console.getCalls()"));
+                    }
+
+                    using (var engine = manager.GetEngine())
+                    {
+                        var command = @"main__ext.components.Welcome.renderToString({ })";
+                        try
+                        {
+                            var result = engine.Execute<string>(command);
+                            System.Console.WriteLine(result);
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Console.WriteLine(ex.Message);
+                        }
+                        System.Console.WriteLine(engine.Execute<string>("console.getCalls()"));
+                    }
+
+
+                    while (true)
+                    {
+                        using (var engine = manager.GetEngine())
+                        {
+                            System.Console.WriteLine("> ");
+                            var command = System.Console.ReadLine();
+                            try
+                            {
+                                var result = engine.Execute<string>(command);
+                                System.Console.WriteLine(result);
+                            }
+                            catch (Exception ex)
+                            {
+                                System.Console.WriteLine(ex.Message);
+                            }
+
+                            System.Console.WriteLine(engine.Execute<string>("console.getCalls()"));
+                        }
                     }
                 }
             }

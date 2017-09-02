@@ -21,7 +21,7 @@ class Timer extends React.Component {
       <Grid className="timer">
         <Row>
           <Col xs={12} md={12} style={{fontSize: '20px'}}>
-            <h3><div dangerouslySetInnerHTML={{ __html: this.props.data.title }} /> { this.props.timer }s</h3>
+            <h3><div dangerouslySetInnerHTML={{ __html: this.props.title }} /> { this.props.timer }s</h3>
           </Col>
         </Row>
       </Grid>
@@ -30,9 +30,7 @@ class Timer extends React.Component {
 }
 
 Timer.defaultProps = {
-  data: {
-    'title': 'This is timer'
-  }
+  'title': 'This is timer'
 }
 
 function mapStateToProps(state) {

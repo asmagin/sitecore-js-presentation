@@ -7,6 +7,9 @@
  *  of patent rights can be found in the PATENTS file in the same directory.
  */
 
+using System.ComponentModel;
+using System.Dynamic;
+
 namespace Sitecore.Js.Presentation
 {
     using System;
@@ -114,7 +117,8 @@ namespace Sitecore.Js.Presentation
                 .ToDictionary(name => name, placeholder => this.Placeholder(placeholder, this._rendering));
 
             // Create ReactJS component props object
-            var props = new { data = this.Model, placeholders };
+            dynamic props = ToDynamic(this.Model);
+            props.placeholders = placeholders;
 
             var serializedProps = JsonConvert.SerializeObject(props, this._jsonSerializerSettings);
 
@@ -265,6 +269,16 @@ namespace Sitecore.Js.Presentation
                     .TrimEnd('=');
 
             return "react_" + str;
+        }
+
+        private ExpandoObject ToDynamic(object value)
+        {
+            IDictionary<string, object> expando = new ExpandoObject();
+
+            foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(value.GetType()))
+                expando.Add(property.Name, property.GetValue(value));
+
+            return expando as ExpandoObject;
         }
     }
 }

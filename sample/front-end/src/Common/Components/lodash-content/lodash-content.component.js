@@ -7,22 +7,19 @@ import _ from 'lodash';
 
 class LodashContent {
 
-  constructor(data, placeholders) {
+  constructor(props) {
 
     this.defaultProps = {
-      data: {
-        'title': '<strong>TITLE</strong>',
-        'text': '<strong>TEXT</strong>',
-        'image': '<img src="' + logo + '" alt="" width="250" height="200" />'
-      },
+      title: '<strong>TITLE</strong>',
+      text: '<strong>TEXT</strong>',
+      image: '<img src="' + logo + '" alt="" width="250" height="200" />',
       placeholders: {
         leftColumn: '<div>LEFT COLUMNT CONTENT</div>',
         rightColumn: '<div>RIGHT COLUMNT CONTENT</div>'
       }
     }
 
-    this.props = Object.assign({}, this.defaultProps, data);
-    this.props.placeholders = Object.assign(this.props.placeholders, placeholders);
+    this.props = Object.assign({}, props || this.defaultProps);
   }
 
   render() {
