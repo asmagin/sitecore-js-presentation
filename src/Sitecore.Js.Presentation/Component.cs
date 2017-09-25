@@ -70,6 +70,7 @@ namespace Sitecore.Js.Presentation
             string componentName,
             object model,
             Rendering rendering,
+            JsonSerializerSettings serializerSetting = null,
             string site = null,
             string containerId = null,
             string containerTag = null,
@@ -86,7 +87,7 @@ namespace Sitecore.Js.Presentation
             this.ContainerTag = string.IsNullOrEmpty(containerTag) ? "div" : containerTag;
             this.ContainerClass = containerClass;
 
-            this._jsonSerializerSettings = new JsonSerializerSettings();
+            this._jsonSerializerSettings = serializerSetting ?? new JsonSerializerSettings(); 
         }
 
         /// <summary>
