@@ -9,6 +9,7 @@
 
 using System.ComponentModel;
 using System.Dynamic;
+using Sitecore.Extensions.StringExtensions;
 
 namespace Sitecore.Js.Presentation
 {
@@ -45,6 +46,8 @@ namespace Sitecore.Js.Presentation
     return obj.getPlaceholders();
 }})({0})";
 
+        private readonly Regex _dynamicPlaceholderRegex = new Regex("(\\.|_|-|#)dynamic$", RegexOptions.IgnoreCase);
+        
         /// <summary>
         ///     Regular expression used to validate JavaScript identifiers. Used to ensure component
         ///     names are valid.
@@ -114,7 +117,7 @@ namespace Sitecore.Js.Presentation
         public virtual string Render(RenderingOptions options)
         {
             var placeholders = this.GetPlaceholders()
-                .ToDictionary(name => name, placeholder => this.Placeholder(placeholder, this._rendering));
+                .ToDictionary(name => _dynamicPlaceholderRegex.Replace(name, string.Empty), placeholder => this.Placeholder(placeholder, this._rendering));
 
             // Create ReactJS component props object
             dynamic props = ToDynamic(this.Model);
@@ -185,12 +188,38 @@ namespace Sitecore.Js.Presentation
         protected virtual string Placeholder(string placeholderName, Rendering rendering)
         {
             Assert.ArgumentNotNull(placeholderName, "placeholderName");
+            Assert.ArgumentNotNull(rendering, "rendering");
 
             var stringWriter = new StringWriter();
-            PipelineService.Get()
-                .RunPipeline(
-                    "mvc.renderPlaceholder",
-                    new RenderPlaceholderArgs(placeholderName, stringWriter, rendering));
+
+            // Append placeholder name with "-dynamic", "_dynamic", ".dynamic" or "#dynamic" in JS component to treat this placeholder as Dynamic 
+            if (_dynamicPlaceholderRegex.IsMatch(placeholderName))
+            {
+                // "-dynamic" part will be removed
+                var placeholder = _dynamicPlaceholderRegex.Replace(placeholderName, string.Empty);
+
+                // this will render placeholders with appended IDs, which is usually used for dynamic placeholders.
+                // you do not need to specify dynamic placeholders in JS (as FE developer might not what is that)
+                PipelineService.Get()
+                    .RunPipeline(
+                        "mvc.renderPlaceholder",
+                        new RenderPlaceholderArgs($"{placeholder}_{rendering.UniqueId.ToString("D").ToUpper()}",
+                            stringWriter, rendering));
+
+                // TODO: figure out how to get correct index to append placeholder
+                PipelineService.Get()
+                    .RunPipeline(
+                        "mvc.renderPlaceholder",
+                        new RenderPlaceholderArgs($"{placeholder}-{rendering.UniqueId.ToString("B").ToUpper()}-0",
+                            stringWriter, rendering));
+            } else {
+                // standard placeholder
+                PipelineService.Get()
+                    .RunPipeline(
+                        "mvc.renderPlaceholder",
+                        new RenderPlaceholderArgs(placeholderName, stringWriter, rendering));
+            }
+
             return stringWriter.ToString();
         }
 

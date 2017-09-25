@@ -13,6 +13,7 @@ The module doesn't require custom renderings to be created in Sitecore. More abo
 * Isomorphic renderings could support React + [Redux](http://redux.js.org/) 
 * SEO support ( due to server-side enabled renderings )
 * Full support for Sitecore Experience Editor
+* Dynamic Placeholders support
 
 ## Getting Started
 
@@ -101,6 +102,18 @@ It is also possible to call Js rendering directly from ".cshtml" file.
 <div>
     @Html.RenderComponent("my_bundle.other_component", new { })
 </div>
+```
+
+## Dynamic Placeholders support
+
+In order to add support of dynamic placeholder install module from [Fortis](http://fortis.ws/fortis-collection/dynamic-placeholders/)
+
+To control wich placeholder in JS rendering will be dynamic, add "-dynamic", "_dynamic", ".dynamic" or "#dynamic" to a placeholder name in a function that exports configuration.
+``` js
+SimpleContent.placeholders = [
+  'leftColumn', // standard placeholder
+  'rightColumn#dynamic' // this placeholder will be dynamic
+];
 ```
 
 ## Sample
